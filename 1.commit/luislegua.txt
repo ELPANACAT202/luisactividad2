@@ -42,4 +42,74 @@ El comando git log --oneline te da una versión resumida en una linea por cambio
 817b933 Agrego Salsas
 49f5dcc Agrego mi sandwich.txt
 
+Y el comando git log --stat te da una versión más larga.
+commit 817b933b0206d88cab338ce004197096e8b295a0
+Author: ELPANACAT202 <ELPANAGATO202>
+Date:   Tue May 20 13:36:48 2025 +0200
 
+    Agrego Salsas
+
+ 1.commit/sandwich.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit a26c49d7b4a8fec9a35268a7ca3481c922b4b2f4
+Author: ELPANACAT202 <ELPANAGATO202>
+Date:   Tue May 20 13:35:00 2025 +0200
+
+diff --git a/1.commit/luislegua.txt b/1.commit/luislegua.txt
+diff --git a/1.commit/luislegua.txt b/1.commit/luislegua.txt
+index 706a2de..e3862c1 100644
+--- a/1.commit/luislegua.txt
++++ b/1.commit/luislegua.txt
+@@ -3,6 +3,7 @@ Untracked files:
+   (use "git add <file>..." to include in what will be committed)
+
+ Ahora pone
++
+ On branch main
+ Changes to be committed:
+   (use "git restore --staged <file>..." to unstage)
+@@ -14,9 +15,15 @@ Untracked files:
+
+ la diferencia es que ahora hay cambios que se pueden guardar.
+
+-En el git log sale:
++Ahora pone
+
+-commit 817b933b0206d88cab338ce004197096e8b295a0 (HEAD -> main)
++Untracked files:
++  (use "git add <file>..." to include in what will be committed)
++        luislegua.txt
+
+Las diferencias son
+
+En el archivo luislegua.txt:
+
+Se agregaron líneas nuevas que describen qué muestra Git cuando hay archivos no controlados (Untracked files).
+
+Se reemplazó la frase “En el git log sale:” por una nueva descripción de archivos sin seguimiento.
+
+También se agregó una línea en blanco para mejorar la organización del texto.
+
+Esto refleja que hiciste cambios explicando cómo se ve el estado del repositorio (git status).
+
+Se le ha añadido esto a git status
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sandwich2.txt
+        ../a
+y a git log --oneline se le ha añadido la linea 
+12f3902 Agrego sandwich2
+y 
+58b70e6 Cambio nombre sandwich2
+
+Ahora, una vez con sandwich2_feo borrado. 
+en git status esta:
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    sandwich2_feo.txt
+y en git log --oneline una vez guardados los cambios, se ha añadido.
+d42fe17 Borro sandwich2feo
+
+En git log --stat ahora se han registrado los cambios de los últimos commits que se han hecho, y sus datos.
