@@ -13,3 +13,20 @@ Untracked files:
         luislegua.txt
 
 la diferencia es que ahora hay cambios que se pueden guardar.
+
+En el git log sale:
+
+commit 817b933b0206d88cab338ce004197096e8b295a0 (HEAD -> main)
+Author: ELPANACAT202 <ELPANAGATO202>
+Date:   Tue May 20 13:36:48 2025 +0200
+
+    Agrego Salsas
+
+commit 49f5dccdbdd90307c50a1e1710f2d8e20a2c2193
+Author: ELPANACAT202 <ELPANAGATO202>
+Date:   Tue May 20 13:09:57 2025 +0200
+
+    Agrego mi sandwich.txt
+
+Ponen, de más nuevo a más viejo, datos de la creación y la descripción de los cambios.
+
