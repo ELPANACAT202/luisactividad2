@@ -1,3 +1,4 @@
 Al hacer git graph, observo mis commits recientes, separadas por  branchs.
+Ahora, los commits se separán por branchs en las que han sido hechos.
 
 
