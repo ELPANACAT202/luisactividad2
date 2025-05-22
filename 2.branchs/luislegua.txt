@@ -1,4 +1,49 @@
+¿Qué es un branch?
+Un branch es una rama del proyecto que permite desarrollar funciones o cambios sin afectar el código principal.
+
+¿Por qué pueden ser útiles los branches?
+Permiten trabajar de forma aislada, probar ideas, colaborar en equipo y evitar conflictos con el código principal.
+
+¿Cómo se crea una branch?
+Con el comando: git branch nombre_rama
+
+¿Cómo se cambia a una branch?
+Con el comando: git checkout nombre_rama
+
+¿Cómo se elimina una branch?
+Con el comando: git branch -d nombre_rama (si ya fue mergeada)
+O git branch -D nombre_rama (forzadamente)
+
+¿Cómo se crea una branch y se cambia a ella en un solo paso?
+Con el comando: git checkout -b nombre_rama
+
+¿Qué es un merge?
+Es la acción de combinar los cambios de una rama con otra.
+
+¿Cómo se realiza un merge?
+Primero se cambia a la rama destino: git checkout master, luego: git merge nombre_rama
+
+¿Que es un tag?
+Es una etiqueta que marca un punto específico en el historial, generalmente para versiones o lanzamientos.
+
+¿Cómo se crea un tag?
+Con el comando: git tag -a nombre_tag -m "Mensaje descriptivo"
+
+
+
+
+
+
+
+
+
 Al hacer git graph, observo mis commits recientes, separadas por  branchs.
 Ahora, los commits se separán por branchs en las que han sido hechos.
+Ahora, despues de "mergear" las branchs, las branchs mergeadas salen juntas, en este caso anana y master.
+Lo mismo que antes, pero ahora con master y experimento.
+Ya no hay ninguna mergeada, al haber sido borradas.
+En git graph ahora solo sale la branch "main" al no haber sido borradas.
+Solo aparece el tag pizza, al ser el único creado.
+
 
 
