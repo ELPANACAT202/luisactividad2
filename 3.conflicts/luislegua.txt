@@ -1,3 +1,18 @@
+¿Qué es un conflicto?
+Un conflicto en Git ocurre cuando Git no puede combinar automáticamente los cambios de dos ramas porque han modificado la misma parte del mismo archivo. Git no sabe cuál versión conservar, así que te pide que lo resuelvas manualmente.
+
+¿Cuándo ocurre un conflicto?
+Un conflicto suele ocurrir cuando haces alguna de estas operaciones:
+
+git merge
+
+git pull
+
+git rebase
+
+Y hay cambios en las mismas líneas de un archivo en ambas ramas. Git no puede elegir cuál versión es la correcta sin tu intervención.
+
+
 $ git diff bife main
 user@DESKTOP-23F07G8 MINGW64 ~/documents/github/luisactividad2/3.conflicts (bife)
 $ git diff main suprema
