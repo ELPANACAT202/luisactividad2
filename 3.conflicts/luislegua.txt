@@ -1,0 +1,44 @@
+$ git diff bife main
+user@DESKTOP-23F07G8 MINGW64 ~/documents/github/luisactividad2/3.conflicts (bife)
+$ git diff main suprema
+diff --git a/3.conflicts/milanesa.txt b/3.conflicts/milanesa.txt
+new file mode 100644
+index 0000000..1d61938
+--- /dev/null
++++ b/3.conflicts/milanesa.txt
+@@ -0,0 +1,2 @@
++pan rallado
++pollo
+
+Al hacer git diff bife main no aparece nada, dado que no he comitteado, y se quedan las 2 iguales, por lo que no hay diferencias.
+Mientras que en la segunda, marca la diferencia, dado que en uno pone pollo y en el otro no.
+
+
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+        ../milanesa.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Aqui me dice que milanesa.txt no ha sido comitteado.
+
+Al hacer git merge con bife funciono.
+
+Al hacer git merge con suprema, no funciono, y salió este mensaje.
+
+Updating dddbae2..11718d8
+error: The following untracked working tree files would be overwritten by merge:
+        3.conflicts/milanesa.txt
+Please move or remove them before you merge.
+Aborting
+
+Al ver el contenido de milanesa.txt aparece esto
+$ cat milanesa.txt
+pollo rallado
+bife
+
